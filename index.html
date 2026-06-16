@@ -120,9 +120,7 @@
                     </select>
                 </div>
             </div>
-
-            <div id="grid-territorios" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                </div>
+            <div id="grid-territorios" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         </section>
 
         <section id="tab-historico" class="tab-content">
@@ -148,8 +146,7 @@
                                 <th class="p-3 text-center">Ações</th>
                             </tr>
                         </thead>
-                        <tbody id="table-historico-body" class="divide-y divide-slate-100">
-                            </tbody>
+                        <tbody id="table-historico-body" class="divide-y divide-slate-100"></tbody>
                     </table>
                 </div>
             </div>
@@ -157,7 +154,6 @@
 
         <section id="tab-relatorios" class="tab-content">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-                
                 <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Giro de Territórios</h3>
@@ -168,7 +164,6 @@
                         <span class="text-sm font-semibold text-slate-500">Dias por ciclo</span>
                     </div>
                 </div>
-
                 <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Total de Quadras da Cidade</h3>
@@ -179,7 +174,6 @@
                         <span class="text-sm font-semibold text-slate-500">Quadras mapeadas</span>
                     </div>
                 </div>
-
                 <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200 flex flex-col justify-between">
                     <div>
                         <h3 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Mais Movimentado</h3>
@@ -205,20 +199,16 @@
                                     <th class="pb-2 text-center font-semibold">Total Saídas</th>
                                 </tr>
                             </thead>
-                            <tbody id="dash-ranking-irmaos-body" class="divide-y divide-slate-100 font-medium text-slate-700">
-                                </tbody>
+                            <tbody id="dash-ranking-irmaos-body" class="divide-y divide-slate-100 font-medium text-slate-700"></tbody>
                         </table>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 lg:col-span-2">
                     <h3 class="text-sm font-bold text-slate-800 mb-2 flex items-center gap-2">
                         <i class="fa-solid fa-bullhorn text-rose-500 animate-bounce"></i> Status Crítico da Campanha (Convites)
                     </h3>
                     <p class="text-xs text-slate-400 mb-4">Abaixo estão listados cartões que haviam ficado incompletos anteriormente mas já foram reassinados por outro irmão para a conclusão total das quadras pendentes.</p>
-                    
-                    <div id="wrapper-campanha-alertas" class="space-y-3">
-                        </div>
+                    <div id="wrapper-campanha-alertas" class="space-y-3"></div>
                 </div>
             </div>
         </section>
@@ -304,8 +294,7 @@
                                     <th class="p-3 text-center">Ações</th>
                                 </tr>
                             </thead>
-                            <tbody id="table-diario-body" class="divide-y divide-slate-100">
-                                </tbody>
+                            <tbody id="table-diario-body" class="divide-y divide-slate-100"></tbody>
                         </table>
                     </div>
                 </div>
@@ -313,14 +302,13 @@
         </section>
 
         <section id="tab-config" class="tab-content">
-            
             <div class="bg-slate-900 text-slate-100 rounded-xl p-5 mb-6 shadow-md border border-slate-800">
                 <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
                     <div class="flex items-center gap-3 text-center lg:text-left flex-col lg:flex-row">
                         <div class="text-indigo-400 bg-indigo-950 p-3 rounded-full text-xl border border-indigo-800"><i class="fa-solid fa-floppy-disk"></i></div>
                         <div>
-                            <h3 class="font-bold text-base text-white">Central de Segurança e Backup</h3>
-                            <p class="text-xs text-slate-400">Exporte um arquivo para salvar seus dados externamente ou limpe a base de dados do navegador.</p>
+                            <h3 class="font-bold text-base text-white">Central de Nuvem e Sincronização</h3>
+                            <p class="text-xs text-slate-400">Os dados agora estão protegidos em tempo real no Firebase Online.</p>
                         </div>
                     </div>
                     <div class="flex flex-wrap gap-2 w-full lg:w-auto justify-center">
@@ -329,10 +317,7 @@
                         </button>
                         <input type="file" id="input-file-backup" onchange="importSystemBackup(event)" class="hidden" accept=".json">
                         <button onclick="document.getElementById('input-file-backup').click()" class="bg-slate-800 hover:bg-slate-700 text-indigo-300 font-semibold px-4 py-2 rounded-lg text-xs transition border border-indigo-900/50 flex items-center gap-1.5">
-                            <i class="fa-solid fa-file-arrow-up"></i> 📤 Restaurar Arquivo de Backup
-                        </button>
-                        <button onclick="clearAllData()" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold px-4 py-2 rounded-lg text-xs transition shadow-sm flex items-center gap-1.5">
-                            <i class="fa-solid fa-trash-can"></i> 🧹 Apagar Tudo
+                            <i class="fa-solid fa-file-arrow-up"></i> 📤 Restaurar Arquivo para Nuvem
                         </button>
                     </div>
                 </div>
@@ -342,19 +327,18 @@
                 <h3 class="font-bold text-indigo-950 text-sm sm:text-base flex items-center gap-2 mb-2">
                     <i class="fa-solid fa-file-import text-indigo-600"></i> Importação Expressa (Copia e Cola do Excel)
                 </h3>
-                <p class="text-xs text-indigo-800 mb-4">Selecione e copie 3 colunas juntas no seu Excel na ordem correta: <b>[Nº Cartão] [Descrição/Bairro] [Total de Quadras]</b>, cole no campo abaixo e processe.</p>
-                
+                <p class="text-xs text-indigo-800 mb-4">Selecione e copie 3 colunas juntas no seu Excel: <b>[Nº Cartão] [Descrição/Bairro] [Total de Quadras]</b>, cole abaixo e processe.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold uppercase text-indigo-900 mb-1">Colar Cartões do Excel:</label>
-                        <textarea id="textarea-import-territorios" rows="3" placeholder="Exemplo de colagem do Excel:&#10;1&#9;REVOREDO - A&#9;7" class="w-full border border-indigo-300 rounded-lg p-2 text-xs bg-white font-mono focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
+                        <textarea id="textarea-import-territorios" rows="3" placeholder="Ex: 1&#9;REVOREDO - A&#9;7" class="w-full border border-indigo-300 rounded-lg p-2 text-xs bg-white font-mono focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
                         <button onclick="importTerritoriosMassa()" class="mt-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-3 rounded-lg text-xs transition shadow-xs">
                             <i class="fa-solid fa-bolt mr-1"></i> Processar Importação de Cartões
                         </button>
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase text-indigo-900 mb-1">Colar Lista de Irmãos / Publicadores:</label>
-                        <textarea id="textarea-import-irmaos" rows="3" placeholder="Cole a lista de nomes, um por linha:&#10;Irmão Exemplo Um" class="w-full border border-indigo-300 rounded-lg p-2 text-xs bg-white font-mono focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
+                        <textarea id="textarea-import-irmaos" rows="3" placeholder="Cole a lista de nomes, um por linha" class="w-full border border-indigo-300 rounded-lg p-2 text-xs bg-white font-mono focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
                         <button onclick="importIrmaosMassa()" class="mt-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-3 rounded-lg text-xs transition shadow-xs">
                             <i class="fa-solid fa-user-gear mr-1"></i> Processar Importação de Irmãos
                         </button>
@@ -415,8 +399,7 @@
                         <button onclick="addIrmao()" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-sm">Adicionar</button>
                     </div>
                     <div class="border border-slate-200 rounded-lg overflow-hidden max-h-64 overflow-y-auto">
-                        <ul id="lista-irmaos" class="divide-y divide-slate-100 text-sm">
-                            </ul>
+                        <ul id="lista-irmaos" class="divide-y divide-slate-100 text-sm"></ul>
                     </div>
                 </div>
 
@@ -426,778 +409,569 @@
                     </h2>
                     <input type="text" id="search-config-t" oninput="renderConfigTerritoriosList()" placeholder="Filtrar cartões..." class="w-full border border-slate-300 rounded-lg p-2 text-xs mb-3 focus:ring-2 focus:ring-indigo-500">
                     <div class="border border-slate-200 rounded-lg overflow-hidden max-h-72 overflow-y-auto">
-                        <table class="w-full text-left border-collapse text-xs">
-                            <thead>
-                                <tr class="bg-slate-50 text-slate-500 border-b border-slate-200 font-semibold">
-                                    <th class="p-2">Nº</th>
-                                    <th class="p-2">Bairro</th>
-                                    <th class="p-2 text-center">Ações</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table-config-territorios-body" class="divide-y divide-slate-100">
-                                </tbody>
-                        </table>
+                        <div id="lista-config-territorios" class="divide-y divide-slate-100 text-sm"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <div id="modal-entrega" class="fixed inset-0 bg-slate-900/60 z-50 hidden items-center justify-center p-4 backdrop-blur-xs">
-        <div class="bg-white rounded-xl shadow-xl border border-slate-200 max-w-md w-full overflow-hidden">
-            <div class="bg-indigo-900 text-white p-4 flex justify-between items-center">
-                <h3 class="font-bold flex items-center gap-2"><i class="fa-solid fa-paper-plane"></i> Designar Cartão <span id="modal-entrega-num"></span></h3>
-                <button onclick="closeModal('modal-entrega')" class="text-indigo-200 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
+    <div id="modal-action" class="fixed inset-0 bg-slate-900/50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-xl shadow-xl border border-slate-200 max-w-md w-full p-6 relative">
+            <h3 id="modal-title" class="text-base font-bold text-slate-800 mb-4">Ação</h3>
+            <div id="modal-body" class="space-y-4"></div>
+            <div class="mt-6 flex justify-end gap-2">
+                <button onclick="closeModal()" class="px-4 py-2 border border-slate-300 rounded-lg text-sm text-slate-600 hover:bg-slate-50 font-medium">Fechar</button>
+                <button id="modal-btn-confirm" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-sm font-medium shadow-sm">Confirmar</button>
             </div>
-            <form onsubmit="confirmEntrega(event)" class="p-5 space-y-4">
-                <input type="hidden" id="modal-entrega-id">
-                
-                <div class="grid grid-cols-3 gap-2">
-                    <div class="col-span-1">
-                        <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Prefixo ID</label>
-                        <input type="text" id="modal-entrega-prefixo" value="2026CC" required class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500">
-                    </div>
-                    <div class="col-span-2">
-                        <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Entregar para qual Irmão?</label>
-                        <select id="modal-entrega-irmao" required class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500">
-                            </select>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Forma de Entrega</label>
-                        <select id="modal-entrega-forma" class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500">
-                            <option value="📄 Físico">📄 Físico</option>
-                            <option value="📲 Digital">📲 Digital</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Data de Designação</label>
-                        <input type="date" id="modal-entrega-data" required class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500">
-                    </div>
-                </div>
-                <div class="flex justify-end gap-2 pt-2">
-                    <button type="button" onclick="closeModal('modal-entrega')" class="border border-slate-300 text-slate-600 px-4 py-2 rounded-lg text-sm hover:bg-slate-50 font-medium">Cancelar</button>
-                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-sm">Confirmar Entrega</button>
-                </div>
-            </form>
         </div>
     </div>
 
-    <div id="modal-baixa" class="fixed inset-0 bg-slate-900/60 z-50 hidden items-center justify-center p-4 backdrop-blur-xs">
-        <div class="bg-white rounded-xl shadow-xl border border-slate-200 max-w-md w-full overflow-hidden">
-            <div class="bg-indigo-900 text-white p-4 flex justify-between items-center">
-                <h3 class="font-bold flex items-center gap-2"><i class="fa-solid fa-download"></i> Receber Devolução - Cartão <span id="modal-baixa-num"></span></h3>
-                <button onclick="closeModal('modal-baixa')" class="text-indigo-200 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
-            </div>
-            <form onsubmit="confirmBaixa(event)" class="p-5 space-y-4">
-                <input type="hidden" id="modal-baixa-id">
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="col-span-2">
-                        <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Data da Devolução Real</label>
-                        <input type="date" id="modal-baixa-data" required class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500">
-                    </div>
-                </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, set, get, child, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 space-y-2">
-                    <label class="block text-xs font-bold uppercase text-slate-600">O Território foi totalmente trabalhado?</label>
-                    <div class="flex gap-4">
-                        <label class="inline-flex items-center text-sm font-medium text-slate-700">
-                            <input type="radio" name="concluido" value="sim" checked onchange="toggleQuadrasFaltantes(false)" class="text-indigo-600 focus:ring-indigo-500 mr-2"> Sim, finalizado
-                        </label>
-                        <label class="inline-flex items-center text-sm font-medium text-slate-700">
-                            <input type="radio" name="concluido" value="nao" onchange="toggleQuadrasFaltantes(true)" class="text-indigo-600 focus:ring-indigo-500 mr-2"> Não, ficou incompleto
-                        </label>
-                    </div>
-                </div>
-
-                <div id="wrapper-quadras-faltantes" class="hidden space-y-2">
-                    <label class="block text-xs font-semibold uppercase text-rose-600 mb-1">Quais quadras ficaram faltando?</label>
-                    <input type="text" id="modal-baixa-quadras-pendentes" placeholder="Ex: 3, 4" class="w-full border border-rose-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-rose-500 focus:outline-none">
-                </div>
-
-                <div>
-                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Observações Desse Ciclo</label>
-                    <textarea id="modal-baixa-obs" rows="2" class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500"></textarea>
-                </div>
-
-                <div class="flex justify-end gap-2 pt-2">
-                    <button type="button" onclick="closeModal('modal-baixa')" class="border border-slate-300 text-slate-600 px-4 py-2 rounded-lg text-sm hover:bg-slate-50 font-medium">Cancelar</button>
-                    <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-sm">Dar Baixa</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <footer class="bg-slate-100 text-slate-400 text-center py-4 border-t border-slate-200 mt-12 text-xs">
-        <p>&copy; 2026 Controle de Territórios — Congregação Norte.</p>
-    </footer>
-
-    <script>
-        // DADOS REAIS DO SEU ARQUIVO DE BACKUP INJETADOS DIRETAMENTE COMO PADRÃO
-        const defaultTerritorios = [
-            {"id":1,"bairro":"REVOREDO - A","referencia":"","quadras":7,"obsPermanente":"","foto":""},
-            {"id":2,"bairro":"REVOREDO - B","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":3,"bairro":"QUARTEL","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":4,"bairro":"APAE","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":5,"bairro":"CAMPESTRE - A","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":6,"bairro":"CAMPESTRE - B","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":7,"bairro":"CAMPESTRE - C","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":8,"bairro":"CAMPESTRE - D","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":9,"bairro":"CAMPESTRE - E","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":10,"bairro":"SÃO CLEMENTE - A","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":11,"bairro":"SÃO CLEMENTE - B","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":12,"bairro":"PASSAGEM - A","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":13,"bairro":"PASSAGEM - B","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":14,"bairro":"PASSAGEM - C","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":15,"bairro":"CANADÁ","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":16,"bairro":"COMASA - A","referencia":"","quadras":6,"obsPermanente":"","foto":""},
-            {"id":17,"bairro":"COMASA - B","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":18,"bairro":"COMASA - C","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":19,"bairro":"COMASA - D","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":20,"bairro":"COMASA - E","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":21,"bairro":"SALÃO DO REINO - A","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":22,"bairro":"SALÃO DO REINO - B","referencia":"","quadras":6,"obsPermanente":"","foto":""},
-            {"id":23,"bairro":"SALÃO DO REINO - C","referencia":"","quadras":2,"obsPermanente":"","foto":""},
-            {"id":24,"bairro":"ÁREA VERDE - A","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":25,"bairro":"ÁREA VERDE - B","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":26,"bairro":"PASSAGEM - D","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":27,"bairro":"RECIFE - A","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":28,"bairro":"RECIFE - B","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":29,"bairro":"RECIFE - C","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":30,"bairro":"RECIFE - D","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":31,"bairro":"FAROL SHOPPING - A","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":32,"bairro":"FAROL SHOPPING - B","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":33,"bairro":"FAROL SHOPPING - C","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":34,"bairro":"FAROL SHOPPING - D","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":35,"bairro":"FÓRUM","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":36,"bairro":"SALÃO CENTRAL - A","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":37,"bairro":"SALÃO CENTRAL - B","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":38,"bairro":"SALÃO CENTRAL - C","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":39,"bairro":"ALVIM FOGAÇA","referencia":"","quadras":3,"obsPermanente":"","foto":""},
-            {"id":40,"bairro":"ALVIM MENDONÇA","referencia":"","quadras":5,"obsPermanente":"","foto":""},
-            {"id":41,"bairro":"FAROL SHOPPING - E","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":42,"bairro":"FAROL SHOPPING - F","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":43,"bairro":"AEROPORTO - A","referencia":"","quadras":4,"obsPermanente":"","foto":""},
-            {"id":44,"bairro":"AEROPORTO - B","referencia":"","quadras":6,"obsPermanente":"","foto":""},
-            {"id":45,"bairro":"SÃO CLEMENTE - C","referencia":"","quadras":4,"obsPermanente":"","foto":""}
-        ];
-
-        const defaultIrmaos = [
-            "Adão Pontes", "Carlos Gonçalves", "Edinelson Pires", "Eduardo Motta", "Everaldo Moreira",
-            "Francisco Silveira", "Joel Silvano", "Juliano Maurício", "Leandro Machado", "Lucas Silveira",
-            "Medeiros", "Milton Galdino", "Nelson Pires", "Oswaldo Fortes", "Paulo Eduardo",
-            "Paulo Latrônico", "Ricardo Brasil", "Ricardo Tamosaits", "Rone Silva", "Victor Amaral", "Zodel Henrique"
-        ];
-
-        const defaultHistorico = [
-            {"id":"2026CC - 01","idTerritorio":1,"irmao":"Rone Silva","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-06","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 02","idTerritorio":2,"irmao":"Rone Silva","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-07","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 03","idTerritorio":3,"irmao":"Everaldo Moreira","formaEntrega":"📲 Digital","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 04","idTerritorio":5,"irmao":"Paulo Eduardo","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 05","idTerritorio":7,"irmao":"Francisco Silveira","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-06","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 06","idTerritorio":10,"irmao":"Edinelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-06","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 07","idTerritorio":11,"irmao":"Victor Amaral","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-06","dataEntrega":"2026-06-15","statusCiclo":"Incompleto","quadrasPendentes":"3","obsGeral":"Faltaram as quadras: 3."},
-            {"id":"2026CC - 09","idTerritorio":15,"irmao":"Medeiros","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 10","idTerritorio":16,"irmao":"Medeiros","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 11","idTerritorio":17,"irmao":"Medeiros","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 12","idTerritorio":18,"irmao":"Medeiros","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 13","idTerritorio":19,"irmao":"Medeiros","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 14","idTerritorio":20,"irmao":"Medeiros","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 15","idTerritorio":21,"irmao":"Joel Silvano","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 16","idTerritorio":22,"irmao":"Joel Silvano","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 17","idTerritorio":23,"irmao":"Joel Silvano","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 18","idTerritorio":24,"irmao":"Paulo Eduardo","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 19","idTerritorio":25,"irmao":"Paulo Eduardo","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 20","idTerritorio":26,"irmao":"Paulo Eduardo","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 21","idTerritorio":28,"irmao":"Milton Galdino","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 22","idTerritorio":29,"irmao":"Ricardo Brasil","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 23","idTerritorio":31,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 24","idTerritorio":32,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 25","idTerritorio":33,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 26","idTerritorio":34,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 26_2","idTerritorio":12,"irmao":"Everaldo Moreira","formaEntrega":"📲 Digital","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 27","idTerritorio":35,"irmao":"Ricardo Brasil","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 28","idTerritorio":36,"irmao":"Ricardo Brasil","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 29","idTerritorio":37,"irmao":"Ricardo Brasil","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 30","idTerritorio":38,"irmao":"Milton Galdino","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 31","idTerritorio":39,"irmao":"Milton Galdino","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 32","idTerritorio":40,"irmao":"Milton Galdino","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-08","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 33","idTerritorio":41,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 34","idTerritorio":42,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 35","idTerritorio":43,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 36","idTerritorio":44,"irmao":"Nelson Pires","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-05","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 37","idTerritorio":45,"irmao":"Lucas Silveira","formaEntrega":"📲 Digital","dataDesignacao":"2026-06-06","dataEntrega":"2026-06-15","statusCiclo":"Concluído","quadrasPendentes":"","obsGeral":""},
-            {"id":"2026CC - 38","idTerritorio":11,"irmao":"Leandro Machado","formaEntrega":"📄 Físico","dataDesignacao":"2026-06-11","dataEntrega":"","statusCiclo":"Em Campo","quadrasPendentes":"","obsGeral":""}
-        ];
-
-        // INICIALIZAÇÃO E PERSISTÊNCIA DAS VARIÁVEIS NO BANCO LOCAL
-        let db = {
-            territorios: JSON.parse(localStorage.getItem('cn_territorios')) || defaultTerritorios,
-            irmaos: JSON.parse(localStorage.getItem('cn_irmaos')) || defaultIrmaos,
-            historico: JSON.parse(localStorage.getItem('cn_historico')) || defaultHistorico,
-            diario: JSON.parse(localStorage.getItem('cn_diario')) || []
+        // Configuração fornecida
+        const firebaseConfig = {
+            apiKey: "AIzaSyDOCkIWSNSHk7IR33Tvf-x7-XQ5pmlMcVY",
+            authDomain: "territorio-ef1c0.firebaseapp.com",
+            databaseURL: "https://territorio-ef1c0-default-rtdb.firebaseio.com",
+            projectId: "territorio-ef1c0",
+            storageBucket: "territorio-ef1c0.firebasestorage.app",
+            messagingSenderId: "521360769026",
+            appId: "1:521360769026:web:d618c0a48385c37dfea71b"
         };
 
-        function commit() {
-            localStorage.setItem('cn_territorios', JSON.stringify(db.territorios));
-            localStorage.setItem('cn_irmaos', JSON.stringify(db.irmaos));
-            localStorage.setItem('cn_historico', JSON.stringify(db.historico));
-            localStorage.setItem('cn_diario', JSON.stringify(db.diario));
-            calculateMetrics();
-        }
+        // Inicializar Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
 
-        // CONTROLADOR DE ABAS
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.getElementById(`tab-${tabId}`).classList.add('active');
-            
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('bg-indigo-800', 'text-white');
-                btn.classList.add('text-indigo-100', 'hover:bg-indigo-800');
-            });
-            const activeBtn = document.getElementById(`btn-${tabId}`);
-            if(activeBtn) {
-                activeBtn.classList.add('bg-indigo-800', 'text-white');
-                activeBtn.classList.remove('text-indigo-100', 'hover:bg-indigo-800');
-            }
+        // Estado da Aplicação Local (Alimentado pelo Firebase)
+        let APP_DATA = {
+            territorios: {},
+            historico: [],
+            irmaos: [],
+            diario: []
+        };
 
-            if(tabId === 'painel') renderPainel();
-            if(tabId === 'historico') renderHistorico();
-            if(tabId === 'relatorios') renderRelatorios();
-            if(tabId === 'diario') renderDiario();
-            if(tabId === 'config') {
-                renderConfig();
+        // Sincronização em tempo real com o Firebase Database
+        function initRealtimeSync() {
+            const dbRef = ref(db, 'gerenciador_territorios');
+            onValue(dbRef, (snapshot) => {
+                const data = snapshot.val();
+                if (data) {
+                    APP_DATA.territorios = data.territorios || {};
+                    APP_DATA.historico = data.historico || [];
+                    APP_DATA.irmaos = data.irmaos || [];
+                    APP_DATA.diario = data.diario || [];
+                }
+                updateDashboardStats();
+                renderPainel();
+                renderHistorico();
+                renderDiario();
+                renderConfigIrmaosList();
                 renderConfigTerritoriosList();
-                cancelTerritorioEdit();
-            }
-        }
-
-        function openModal(id) { document.getElementById(id).classList.remove('hidden'); document.getElementById(id).classList.add('flex'); }
-        function closeModal(id) { document.getElementById(id).classList.add('hidden'); document.getElementById(id).classList.remove('flex'); }
-
-        // EXPORTAR BACKUP EM ARQUIVO JSON
-        function exportSystemBackup() {
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(db, null, 2));
-            const downloadAnchor = document.createElement('a');
-            downloadAnchor.setAttribute("href", dataStr);
-            downloadAnchor.setAttribute("download", `backup_territorios_norte_${new Date().toISOString().substring(0, 10)}.json`);
-            document.body.appendChild(downloadAnchor);
-            downloadAnchor.click();
-            downloadAnchor.remove();
-        }
-
-        // IMPORTAR ARQUIVO DE BACKUP JSON
-        function importSystemBackup(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                try {
-                    const parsed = JSON.parse(e.target.result);
-                    if (parsed.territorios && parsed.irmaos && parsed.historico) {
-                        if(confirm("Deseja substituir TODAS as informações atuais por este arquivo de backup?")) {
-                            db = parsed;
-                            if(!db.diario) db.diario = [];
-                            commit();
-                            switchTab('painel');
-                            alert("Backup restaurado com sucesso!");
-                        }
-                    } else {
-                        alert("Erro: Formato inválido.");
-                    }
-                } catch (err) {
-                    alert("Erro ao processar o arquivo.");
-                }
-            };
-            reader.readAsText(file);
-            event.target.value = '';
-        }
-
-        // IMPORTAÇÃO EM MASSA DO EXCEL
-        function importTerritoriosMassa() {
-            const textarea = document.getElementById('textarea-import-territorios');
-            const text = textarea.value;
-            if (!text.trim()) { alert("Cole os dados do Excel antes!"); return; }
-
-            const lines = text.split('\n');
-            let adicionados = 0;
-            let erros = 0;
-
-            lines.forEach(line => {
-                if (!line.trim()) return;
-                const cols = line.split('\t');
-                if (cols.length >= 3) {
-                    const id = parseInt(cols[0].trim());
-                    const bairro = cols[1].trim().toUpperCase();
-                    const quadras = parseInt(cols[2].trim());
-
-                    if (!isNaN(id) && bairro && !isNaN(quadras)) {
-                        if (!db.territorios.some(t => t.id === id)) {
-                            db.territorios.push({ id, bairro, referencia: "", quadras, obsPermanente: "", foto: "" });
-                            adicionados++;
-                        } else { erros++; }
-                    } else { erros++; }
-                } else { erros++; }
             });
-
-            commit();
-            textarea.value = "";
-            renderConfigTerritoriosList();
-            alert(`Finalizado!\n🟢 ${adicionados} cartões importados.\n⚠️ ${erros} linhas ignoradas.`);
         }
 
-        function importIrmaosMassa() {
-            const textarea = document.getElementById('textarea-import-irmaos');
-            const text = textarea.value;
-            if (!text.trim()) { alert("Cole uma lista antes!"); return; }
-            const lines = text.split('\n');
-            let adicionados = 0;
-            lines.forEach(line => {
-                const name = line.trim();
-                if (!name) return;
-                if (!db.irmaos.includes(name)) {
-                    db.irmaos.push(name);
-                    adicionados++;
-                }
-            });
-            commit();
-            textarea.value = "";
-            renderConfig();
-            alert(`Sucesso! ${adicionados} publicadores adicionados.`);
+        async function saveToFirebase() {
+            await set(ref(db, 'gerenciador_territorios'), APP_DATA);
         }
 
-        // CÁLCULO DE METRICAS PRINCIPAIS
-        function calculateMetrics() {
-            const total = db.territorios.length;
-            let designados = 0;
-            let livres = 0;
-            let prioridades = 0;
-
-            db.territorios.forEach(t => {
-                const state = getTerritorioState(t.id);
-                if (state.isDesignado) designados++;
-                else {
-                    livres++;
-                    if(state.isPrioridade) prioridades++;
-                }
-            });
-
-            document.getElementById('stat-total').innerText = total;
-            document.getElementById('stat-designados').innerText = designados;
-            document.getElementById('stat-livres').innerText = livres;
-            document.getElementById('stat-prioridades').innerText = prioridades;
+        // --- SISTEMA DE NAVEGAÇÃO ---
+        window.switchTab = function(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('bg-indigo-800', 'text-white'));
+            
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+            const btn = document.getElementById(`btn-${tabId}`);
+            if(btn) btn.classList.add('bg-indigo-800', 'text-white');
         }
 
-        function getTerritorioState(idTerritorio) {
-            const logs = db.historico.filter(l => l.idTerritorio == idTerritorio);
-            const activeLog = logs.find(l => l.statusCiclo === "Em Campo");
-            const finishedLogs = logs.filter(l => l.statusCiclo !== "Em Campo");
-            const lastFinished = finishedLogs.length > 0 ? finishedLogs[finishedLogs.length - 1] : null;
-
-            return {
-                isDesignado: !!activeLog,
-                irmaoAtual: activeLog ? activeLog.irmao : "—",
-                dataDesignacao: activeLog ? formatDate(activeLog.dataDesignacao) : "—",
-                dataUltimaEntrega: lastFinished ? formatDate(lastFinished.dataEntrega) : "Nunca finalizado",
-                isPrioridade: lastFinished ? lastFinished.statusCiclo === "Incompleto" : false
-            };
-        }
-
-        function formatDate(dateStr) {
-            if(!dateStr) return "";
-            const parts = dateStr.split('-');
-            if(parts.length !== 3) return dateStr;
-            return `${parts[2]}/${parts[1]}/${parts[0]}`;
-        }
-
-        // RENDERIZAÇÃO PAINEL
-        function renderPainel() {
+        // --- RENDERIZADORES DO PAINEL DE CARD ---
+        window.renderPainel = function() {
             const grid = document.getElementById('grid-territorios');
             const search = document.getElementById('search-painel').value.toLowerCase();
             const filter = document.getElementById('filter-status').value;
-            grid.innerHTML = "";
+            grid.innerHTML = '';
 
-            db.territorios.forEach(t => {
-                const state = getTerritorioState(t.id);
-                if(!t.id.toString().includes(search) && !t.bairro.toLowerCase().includes(search)) return;
-                
-                let matchesFilter = true;
-                if(filter === 'Livre' && state.isDesignado) matchesFilter = false;
-                if(filter === 'Designado' && !state.isDesignado) matchesFilter = false;
-                if(filter === 'Prioridade' && (!state.isPrioridade || state.isDesignado)) matchesFilter = false;
-                if(!matchesFilter) return;
+            Object.values(APP_DATA.territorios).forEach(t => {
+                const matchesSearch = t.id.toString().includes(search) || t.bairro.toLowerCase().includes(search);
+                const matchesFilter = filter === 'todos' || t.status === filter || (filter === 'Prioridade' && t.status === 'Prioridade');
 
-                const card = document.createElement('div');
-                card.className = `bg-white rounded-xl shadow-sm border ${state.isPrioridade && !state.isDesignado ? 'border-rose-300 ring-2 ring-rose-50 pulse-danger' : 'border-slate-200'} p-5 flex flex-col justify-between transition hover:shadow-md`;
-                
-                let badgeStatus = state.isDesignado 
-                    ? `<span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-1 rounded-full">🟡 Em Campo</span>`
-                    : `<span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-1 rounded-full">🟢 Livre</span>`;
+                if (matchesSearch && matchesFilter) {
+                    let statusBadge = `<span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-semibold">🟢 Livre</span>`;
+                    if (t.status === 'Designado') statusBadge = `<span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-semibold">🟡 Designado</span>`;
+                    if (t.status === 'Prioridade') statusBadge = `<span class="bg-rose-100 text-rose-800 text-xs px-2.5 py-1 rounded-full font-semibold pulse-danger">🚨 Prioridade</span>`;
 
-                card.innerHTML = `
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <span class="bg-slate-100 text-slate-700 text-xs font-bold px-2 py-0.5 rounded border border-slate-300">Nº ${t.id}</span>
-                            <div>${badgeStatus}</div>
+                    const card = document.createElement('div');
+                    card.className = "bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col justify-between";
+                    card.innerHTML = `
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-3">
+                                <div>
+                                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Cartão ${t.id}</span>
+                                    <h4 class="text-base font-bold text-slate-800 block truncate">${t.bairro}</h4>
+                                </div>
+                                ${statusBadge}
+                            </div>
+                            <p class="text-xs text-slate-500 mb-2"><i class="fa-solid fa-draw-polygon mr-1"></i> <b>${t.quadras}</b> quadras mapeadas</p>
+                            ${t.referencia ? `<p class="text-xs text-slate-500 mb-2 truncate"><i class="fa-solid fa-location-crosshairs mr-1"></i> Ref: ${t.referencia}</p>` : ''}
+                            ${t.status !== 'Livre' ? `
+                                <div class="mt-3 pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-1">
+                                    <p><i class="fa-solid fa-user text-indigo-500 mr-1"></i> Com: <b>${t.irmaoAtual}</b></p>
+                                    <p><i class="fa-solid fa-calendar text-indigo-500 mr-1"></i> Retirado: ${t.dataSaida}</p>
+                                </div>
+                            ` : ''}
                         </div>
-                        <h3 class="text-base font-bold text-slate-800">${t.bairro}</h3>
-                        <div class="mt-3 grid grid-cols-2 gap-2 text-xs bg-slate-50 p-2 rounded-lg mb-2">
-                            <div><p class="text-slate-400">Quadras</p><p class="font-bold">${t.quadras}</p></div>
-                            <div><p class="text-slate-400">Irmão</p><p class="font-bold truncate">${state.irmaoAtual}</p></div>
+                        <div class="bg-slate-50 px-5 py-3 border-t border-slate-100 flex gap-2">
+                            ${t.status === 'Livre' ? 
+                                `<button onclick="openDesignarModal(${t.id})" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium py-2 rounded-lg transition shadow-xs"><i class="fa-solid fa-user-plus mr-1"></i> Designar</button>` :
+                                `<button onclick="openDevolverModal(${t.id})" class="w-full bg-slate-800 hover:bg-slate-700 text-white text-xs font-medium py-2 rounded-lg transition shadow-xs"><i class="fa-solid fa-arrow-rotate-left mr-1"></i> Devolver / Dar Baixa</button>`
+                            }
                         </div>
-                    </div>
-                    <div class="flex gap-2 mt-2 pt-2 border-t border-slate-100">
-                        ${state.isDesignado ? `<button onclick="openBaixaModal(${t.id})" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-1.5 rounded-lg text-xs transition">Dar Baixa</button>` 
-                                            : `<button onclick="openEntregaModal(${t.id})" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-1.5 rounded-lg text-xs transition">Designar</button>`}
-                    </div>
-                `;
-                grid.appendChild(card);
+                    `;
+                    grid.appendChild(card);
+                }
             });
         }
 
-        // LÓGICA DO DASHBOARD DINÂMICO
-        function renderRelatorios() {
-            // 1. Totalizar Quadras Gerais
-            let totalQuadrasGerais = db.territorios.reduce((acc, t) => acc + t.quadras, 0);
-            document.getElementById('dash-total-quadras').innerText = totalQuadrasGerais;
-
-            // 2. Tempo Médio em Campo
-            let totalDias = 0;
-            let ciclosConcluidos = 0;
-            const cardCounts = {};
-
-            db.historico.forEach(h => {
-                // Contagem para cartão frequente
-                cardCounts[h.idTerritorio] = (cardCounts[h.idTerritorio] || 0) + 1;
-
-                if (h.dataDesignacao && h.dataEntrega) {
-                    const diffTime = Math.abs(new Date(h.dataEntrega) - new Date(h.dataDesignacao));
-                    totalDias += Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                    ciclosConcluidos++;
-                }
-            });
-
-            document.getElementById('dash-media-dias').innerText = ciclosConcluidos > 0 ? (totalDias / ciclosConcluidos).toFixed(1) : "—";
-
-            // 3. Determinar Cartão mais movimentado
-            let maisFrequenteId = "—";
-            let maisFrequenteQtd = 0;
-            Object.entries(cardCounts).forEach(([id, qtd]) => {
-                if (qtd > maisFrequenteQtd) {
-                    maisFrequenteQtd = qtd;
-                    maisFrequenteId = id;
-                }
-            });
-            const tFrequente = db.territorios.find(t => t.id == maisFrequenteId);
-            if(tFrequente) {
-                document.getElementById('dash-card-frequente').innerText = `Nº ${tFrequente.id} - ${tFrequente.bairro}`;
-                document.getElementById('dash-card-frequente-qtd').innerText = `${maisFrequenteQtd} Saídas registradas`;
-            }
-
-            // 4. Ranking de Irmãos / Publicadores
-            const irmaoCounts = {};
-            db.historico.forEach(h => { irmaoCounts[h.irmao] = (irmaoCounts[h.irmao] || 0) + 1; });
-            const rankingSorted = Object.entries(irmaoCounts).sort((a,b) => b[1] - a[1]);
-
-            const rankingBody = document.getElementById('dash-ranking-irmaos-body');
-            rankingBody.innerHTML = "";
-            if(rankingSorted.length === 0) {
-                rankingBody.innerHTML = `<tr><td colspan="2" class="text-center p-4 text-slate-400">Sem dados.</td></tr>`;
-            } else {
-                rankingSorted.forEach(([name, count]) => {
-                    rankingBody.innerHTML += `
-                        <tr class="border-b border-slate-50 hover:bg-slate-50">
-                            <td class="py-2 flex items-center gap-2"><i class="fa-solid fa-user text-slate-300"></i> ${name}</td>
-                            <td class="py-2 text-center font-bold text-indigo-600">${count}</td>
-                        </tr>
-                    `;
+        // --- CONTROLE DE DESIGNAR E DEVOLVER (MODAIS) ---
+        window.openDesignarModal = function(id) {
+            const modal = document.getElementById('modal-action');
+            document.getElementById('modal-title').innerText = `Designar Cartão nº ${id}`;
+            const body = document.getElementById('modal-body');
+            
+            let options = APP_DATA.irmaos.map(i => `<option value="${i}">${i}</option>`).join('');
+            
+            body.innerHTML = `
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Selecione o Publicador / Irmão</label>
+                    <select id="action-irmao" class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white focus:ring-2 focus:ring-indigo-500">
+                        ${options || '<option value="">Nenhum irmão cadastrado</option>'}
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Forma de Entrega</label>
+                    <select id="action-forma" class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white">
+                        <option value="Físico (Papel/Cartão)">Físico (Papel/Cartão)</option>
+                        <option value="Digital (WhatsApp/Link)">Digital (WhatsApp/Link)</option>
+                    </select>
+                </div>
+            `;
+            
+            const btn = document.getElementById('modal-btn-confirm');
+            btn.onclick = async () => {
+                const irmao = document.getElementById('action-irmao').value;
+                const forma = document.getElementById('action-forma').value;
+                if(!irmao) return alert('Selecione um irmão.');
+                
+                APP_DATA.territorios[id].status = 'Designado';
+                APP_DATA.territorios[id].irmaoAtual = irmao;
+                APP_DATA.territorios[id].dataSaida = new Date().toLocaleDateString('pt-BR');
+                
+                APP_DATA.historico.unshift({
+                    idSaida: Date.now().toString().slice(-6),
+                    idCartao: id,
+                    bairro: APP_DATA.territorios[id].bairro,
+                    irmao: irmao,
+                    forma: forma,
+                    dataSaida: APP_DATA.territorios[id].dataSaida,
+                    dataBaixa: '—',
+                    ciclo: '—',
+                    statusCiclo: 'Em campo',
+                    obs: ''
                 });
-            }
-
-            // 5. Alertas de Campanha (Cruzamento Inteligente de Pendências Reatribuídas)
-            const wrapperCampanha = document.getElementById('wrapper-campanha-alertas');
-            wrapperCampanha.innerHTML = "";
-
-            const ativos = db.historico.filter(h => h.statusCiclo === "Em Campo");
-            let alertasGerados = 0;
-
-            ativos.forEach(at => {
-                // Descobre se esse mesmo território já teve uma devolução como "Incompleto" antes
-                const historicoIncompleto = db.historico.filter(h => h.idTerritorio === at.idTerritorio && h.statusCiclo === "Incompleto");
                 
-                if(historicoIncompleto.length > 0) {
-                    const t = db.territorios.find(terr => terr.id === at.idTerritorio);
-                    const ultimaPendencia = historicoIncompleto[historicoIncompleto.length - 1];
-                    alertasGerados++;
+                await saveToFirebase();
+                closeModal();
+            };
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
 
-                    wrapperCampanha.innerHTML += `
-                        <div class="bg-rose-50 border-l-4 border-rose-500 p-3 rounded-r-xl shadow-xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
-                            <div>
-                                <span class="bg-rose-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider"><i class="fa-solid fa-star-of-life mr-1 animate-spin"></i> Meta de Conclusão</span>
-                                <h4 class="font-bold text-slate-800 mt-1 text-sm">Cartão Nº ${at.idTerritorio} — ${t ? t.bairro : 'Bairro'}</h4>
-                                <p class="text-xs text-slate-600">O irmão <b class="text-indigo-900">${at.irmao}</b> assumiu este cartão para liquidar a(s) **quadra(s): ${ultimaPendencia.quadrasPendentes || 'Restantes'}** que haviam ficado pendentes anteriormente!</p>
-                            </div>
-                            <div class="text-right text-xs bg-white/80 p-2 rounded border border-rose-100 min-w-[120px]">
-                                <span class="text-slate-400 block">ID do Registro</span>
-                                <span class="font-mono font-bold text-slate-700">${at.id}</span>
-                            </div>
-                        </div>
-                    `;
+        window.openDevolverModal = function(id) {
+            const modal = document.getElementById('modal-action');
+            document.getElementById('modal-title').innerText = `Dar Baixa / Devolver Cartão nº ${id}`;
+            const body = document.getElementById('modal-body');
+            
+            body.innerHTML = `
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Status da Devolução</label>
+                    <select id="action-status-dev" class="w-full border border-slate-300 rounded-lg p-2 text-sm bg-white">
+                        <option value="Livre">🟢 Concluído Integralmente (Pronto para Livre)</option>
+                        <option value="Prioridade">🚨 Incompleto (Necessita de Retrabalho/Prioridade)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-500 mb-1">Observações de Campo</label>
+                    <input type="text" id="action-obs-dev" placeholder="Ex: Mudança de morador nas quadras 2 e 3" class="w-full border border-slate-300 rounded-lg p-2 text-sm">
+                </div>
+            `;
+            
+            const btn = document.getElementById('modal-btn-confirm');
+            btn.onclick = async () => {
+                const statusDev = document.getElementById('action-status-dev').value;
+                const obs = document.getElementById('action-obs-dev').value;
+                
+                const histIndex = APP_DATA.historico.findIndex(h => h.idCartao == id && h.dataBaixa === '—');
+                if (histIndex !== -1) {
+                    const dataFim = new Date();
+                    const partesData = APP_DATA.historico[histIndex].dataSaida.split('/');
+                    const dataIni = new Date(partesData[2], partesData[1] - 1, partesData[0]);
+                    const diffDias = Math.ceil(Math.abs(dataFim - dataIni) / (1000 * 60 * 60 * 24)) || 1;
+                    
+                    APP_DATA.historico[histIndex].dataBaixa = dataFim.toLocaleDateString('pt-BR');
+                    APP_DATA.historico[histIndex].ciclo = diffDias;
+                    APP_DATA.historico[histIndex].statusCiclo = statusDev === 'Livre' ? 'Finalizado' : 'Incompleto';
+                    APP_DATA.historico[histIndex].obs = obs;
                 }
-            });
-
-            if(alertasGerados === 0) {
-                wrapperCampanha.innerHTML = `<div class="p-6 text-center text-slate-400 border border-dashed rounded-xl text-xs"><i class="fa-solid fa-square-check text-2xl mb-1 block text-slate-300"></i>Nenhum território ativo possui pendências pendentes de ciclos passados neste momento. Tudo limpo!</div>`;
-            }
+                
+                APP_DATA.territorios[id].status = statusDev;
+                APP_DATA.territorios[id].irmaoAtual = '—';
+                APP_DATA.territorios[id].dataSaida = '—';
+                
+                await saveToFirebase();
+                closeModal();
+            };
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
         }
 
-        // MODAIS E CONFIRMAÇÕES
-        function openEntregaModal(id) {
-            document.getElementById('modal-entrega-num').innerText = id;
-            document.getElementById('modal-entrega-id').value = id;
-            document.getElementById('modal-entrega-data').value = new Date().toISOString().substring(0, 10);
-            const selectIrmao = document.getElementById('modal-entrega-irmao');
-            selectIrmao.innerHTML = '<option value="" disabled selected>Selecione...</option>';
-            db.irmaos.forEach(name => { selectIrmao.innerHTML += `<option value="${name}">${name}</option>`; });
-            openModal('modal-entrega');
+        window.closeModal = function() {
+            const modal = document.getElementById('modal-action');
+            modal.classList.remove('flex');
+            modal.classList.add('hidden');
         }
 
-        function confirmEntrega(e) {
-            e.preventDefault();
-            const idTerritorio = parseInt(document.getElementById('modal-entrega-id').value);
-            const irmao = document.getElementById('modal-entrega-irmao').value;
-            const formaEntrega = document.getElementById('modal-entrega-forma').value;
-            const dataDesignacao = document.getElementById('modal-entrega-data').value;
-            const prefixo = document.getElementById('modal-entrega-prefixo').value.trim() || "2026CC";
-
-            const countSamePrefix = db.historico.filter(h => h.id.startsWith(prefixo)).length + 1;
-            const customId = `${prefixo} - ${countSamePrefix.toString().padStart(2, '0')}`;
-
-            db.historico.push({ id: customId, idTerritorio, irmao, formaEntrega, dataDesignacao, dataEntrega: "", statusCiclo: "Em Campo", quadrasPendentes: "", obsGeral: "" });
-            commit();
-            closeModal('modal-entrega');
-            renderPainel();
-        }
-
-        function openBaixaModal(id) {
-            document.getElementById('modal-baixa-num').innerText = id;
-            document.getElementById('modal-baixa-id').value = id;
-            document.getElementById('modal-baixa-data').value = new Date().toISOString().substring(0, 10);
-            document.getElementById('modal-baixa-quadras-pendentes').value = "";
-            document.getElementById('modal-baixa-obs').value = "";
-            document.getElementsByName('concluido')[0].checked = true;
-            toggleQuadrasFaltantes(false);
-            openModal('modal-baixa');
-        }
-
-        function toggleQuadrasFaltantes(show) {
-            const wrapper = document.getElementById('wrapper-quadras-faltantes');
-            if(show) wrapper.classList.remove('hidden'); else wrapper.classList.add('hidden');
-        }
-
-        function confirmBaixa(e) {
-            e.preventDefault();
-            const idTerritorio = parseInt(document.getElementById('modal-baixa-id').value);
-            const dataEntrega = document.getElementById('modal-baixa-data').value;
-            const concluidoVal = document.querySelector('input[name="concluido"]:checked').value;
-            const quadrasPendentes = document.getElementById('modal-baixa-quadras-pendentes').value;
-            const textObs = document.getElementById('modal-baixa-obs').value;
-
-            const logIndex = db.historico.findIndex(l => l.idTerritorio === idTerritorio && l.statusCiclo === "Em Campo");
-            if(logIndex !== -1) {
-                let statusCiclo = concluidoVal === 'sim' ? 'Concluído' : 'Incompleto';
-                let finalObs = statusCiclo === 'Incompleto' ? `Faltaram as quadras: ${quadrasPendentes}. ${textObs}` : textObs;
-
-                db.historico[logIndex].dataEntrega = dataEntrega;
-                db.historico[logIndex].statusCiclo = statusCiclo;
-                db.historico[logIndex].quadrasPendentes = quadrasPendentes;
-                db.historico[logIndex].obsGeral = finalObs.trim();
-                commit();
-            }
-            closeModal('modal-baixa');
-            renderPainel();
-        }
-
-        // HISTÓRICO RENDER
-        function renderHistorico() {
+        // --- HISTÓRICO ---
+        window.renderHistorico = function() {
             const tbody = document.getElementById('table-historico-body');
-            tbody.innerHTML = "";
-            const sortedLogs = [...db.historico].sort((a,b) => b.id.localeCompare(a.id));
-
-            sortedLogs.forEach(log => {
-                const terr = db.territorios.find(t => t.id == log.idTerritorio);
-                let diasTotais = "—";
-                if(log.dataDesignacao && log.dataEntrega) {
-                    const diffTime = Math.abs(new Date(log.dataEntrega) - new Date(log.dataDesignacao));
-                    diasTotais = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-                }
-                let badge = log.statusCiclo === "Em Campo" ? `<span class="text-amber-600 bg-amber-50 px-1 py-0.5 rounded text-[10px] font-bold">Em Campo</span>`
-                            : log.statusCiclo === "Concluído" ? `<span class="text-emerald-600 bg-emerald-50 px-1 py-0.5 rounded text-[10px] font-bold">Concluído</span>`
-                            : `<span class="text-rose-600 bg-rose-50 px-1 py-0.5 rounded text-[10px] font-bold">Incompleto</span>`;
-
-                tbody.innerHTML += `
-                    <tr class="hover:bg-slate-50 text-xs">
-                        <td class="p-3 font-mono font-bold">${log.id}</td>
-                        <td class="p-3 font-semibold">Nº ${log.idTerritorio} - ${terr ? terr.bairro : '—'}</td>
-                        <td class="p-3">${log.irmao}</td>
-                        <td class="p-3">${log.formaEntrega}</td>
-                        <td class="p-3">${formatDate(log.dataDesignacao)}</td>
-                        <td class="p-3">${log.dataEntrega ? formatDate(log.dataEntrega) : '—'}</td>
-                        <td class="p-3 text-center">${diasTotais}</td>
-                        <td class="p-3">${badge}</td>
-                        <td class="p-3 truncate max-w-[150px]" title="${log.obsGeral}">${log.obsGeral || '—'}</td>
-                        <td class="p-3 text-center"><button onclick="deleteHistorico('${log.id}')" class="text-slate-400 hover:text-rose-600"><i class="fa-solid fa-trash-can"></i></button></td>
-                    </tr>
+            tbody.innerHTML = '';
+            APP_DATA.historico.forEach((h, idx) => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 border-b border-slate-100";
+                tr.innerHTML = `
+                    <td class="p-3 font-mono text-xs text-slate-500">#${h.idSaida}</td>
+                    <td class="p-3"><b>${h.idCartao}</b> - ${h.bairro}</td>
+                    <td class="p-3 font-medium">${h.irmao}</td>
+                    <td class="p-3 text-xs text-slate-500">${h.forma}</td>
+                    <td class="p-3 text-xs">${h.dataSaida}</td>
+                    <td class="p-3 text-xs">${h.dataBaixa}</td>
+                    <td class="p-3 text-center font-bold">${h.ciclo}</td>
+                    <td class="p-3">
+                        <span class="px-2 py-0.5 rounded text-[11px] font-bold ${h.statusCiclo === 'Finalizado' ? 'bg-emerald-100 text-emerald-800' : h.statusCiclo === 'Incompleto' ? 'bg-rose-100 text-rose-800' : 'bg-amber-100 text-amber-800'}">
+                            ${h.statusCiclo}
+                        </span>
+                    </td>
+                    <td class="p-3 text-xs text-slate-500 italic max-w-xs truncate" title="${h.obs}">${h.obs || '—'}</td>
+                    <td class="p-3 text-center">
+                        <button onclick="deleteHistoricoItem(${idx})" class="text-rose-500 hover:text-rose-700"><i class="fa-solid fa-trash-can"></i></button>
+                    </td>
                 `;
+                tbody.appendChild(tr);
             });
         }
 
-        function deleteHistorico(idSaida) {
-            if(confirm(`Excluir permanentemente registro ${idSaida}?`)) {
-                db.historico = db.historico.filter(h => h.id !== idSaida);
-                commit();
-                renderHistorico();
+        window.deleteHistoricoItem = async function(idx) {
+            if(confirm("Excluir este registro permanentemente do histórico online?")) {
+                APP_DATA.historico.splice(idx, 1);
+                await saveToFirebase();
             }
         }
 
-        // DIÁRIO LÓGICA SIMPLES
-        function renderDiario() {
-            document.getElementById('diario-data').value = new Date().toISOString().substring(0, 10);
-            const tbody = document.getElementById('table-diario-body');
-            tbody.innerHTML = "";
-            if(db.diario.length === 0){
-                tbody.innerHTML = `<tr><td colspan="5" class="text-center p-4 text-slate-400 text-xs">Nenhum registro.</td></tr>`;
-                return;
+        // --- DASHBOARD & ESTATÍSTICAS ---
+        function updateDashboardStats() {
+            const list = Object.values(APP_DATA.territorios);
+            document.getElementById('stat-total').innerText = list.length;
+            document.getElementById('stat-designados').innerText = list.filter(t => t.status === 'Designado').length;
+            document.getElementById('stat-livres').innerText = list.filter(t => t.status === 'Livre').length;
+            document.getElementById('stat-prioridades').innerText = list.filter(t => t.status === 'Prioridade').length;
+            
+            // Total de Quadras
+            const totalQuadras = list.reduce((acc, curr) => acc + parseInt(curr.quadras || 0), 0);
+            document.getElementById('dash-total-quadras').innerText = totalQuadras;
+
+            // Média de Dias de Giro
+            const finalizados = APP_DATA.historico.filter(h => h.ciclo !== '—');
+            if(finalizados.length > 0) {
+                const media = Math.round(finalizados.reduce((acc, curr) => acc + curr.ciclo, 0) / finalizados.length);
+                document.getElementById('dash-media-dias').innerText = media;
+            } else {
+                document.getElementById('dash-media-dias').innerText = '0';
             }
-            db.diario.forEach(item => {
-                tbody.innerHTML += `
-                    <tr class="hover:bg-slate-50 text-xs border-b border-slate-100">
-                        <td class="p-3"><b>${formatDate(item.data)}</b><br><span class="text-indigo-600">${item.periodo}</span></td>
-                        <td class="p-3"><b>${item.pontoEncontro}</b><br><span class="text-slate-400">Dir: ${item.dirigente}</span></td>
-                        <td class="p-3 text-center">${item.irmaosPresentes} pub. / ${item.publicacoes} dist.</td>
-                        <td class="p-3">${item.clima}<br><span class="text-slate-400">${item.imprevisto}</span></td>
-                        <td class="p-3 text-center"><button onclick="deleteDiario(${item.id})" class="text-slate-400 hover:text-rose-600"><i class="fa-solid fa-trash-can"></i></button></td>
-                    </tr>
-                `;
+
+            // Cartão Mais Frequente
+            const contagemCartoes = {};
+            APP_DATA.historico.forEach(h => { contagemCartoes[h.idCartao] = (contagemCartoes[h.idCartao] || 0) + 1; });
+            let maisFrequenteId = '—', maxSaidas = 0;
+            Object.entries(contagemCartoes).forEach(([id, qtd]) => {
+                if(qtd > maxSaidas) { maxSaidas = qtd; maisFrequenteId = id; }
             });
+            if(maisFrequenteId !== '—' && APP_DATA.territorios[maisFrequenteId]) {
+                document.getElementById('dash-card-frequente').innerText = `Card ${maisFrequenteId} - ${APP_DATA.territorios[maisFrequenteId].bairro}`;
+                document.getElementById('dash-card-frequente-qtd').innerText = `${maxSaidas} saídas registradas`;
+            }
+
+            // Ranking de Apoio dos Irmãos
+            const rankingIrmaos = {};
+            APP_DATA.historico.forEach(h => { rankingIrmaos[h.irmao] = (rankingIrmaos[h.irmao] || 0) + 1; });
+            const sortedIrmaos = Object.entries(rankingIrmaos).sort((a,b) => b[1] - a[1]);
+            const rankingBody = document.getElementById('dash-ranking-irmaos-body');
+            rankingBody.innerHTML = '';
+            sortedIrmaos.forEach(([nome, qtd]) => {
+                rankingBody.innerHTML += `<tr><td class="py-2">${nome}</td><td class="py-2 text-center font-bold text-indigo-600">${qtd}</td></tr>`;
+            });
+
+            // Alertas Críticos da Campanha
+            const wrapperAlertas = document.getElementById('wrapper-campanha-alertas');
+            wrapperAlertas.innerHTML = '';
+            list.filter(t => t.status === 'Prioridade').forEach(t => {
+                wrapperAlertas.innerHTML += `
+                    <div class="bg-rose-50 border border-rose-200 p-3 rounded-lg flex justify-between items-center text-xs">
+                        <div><span class="font-bold text-rose-800">Cartão ${t.id}</span> está marcado como incompleto e precisa voltar a campo!</div>
+                        <button onclick="switchTab('painel')" class="bg-rose-600 text-white px-2 py-1 rounded font-semibold hover:bg-rose-700">Designar Urgente</button>
+                    </div>`;
+            });
+            if(wrapperAlertas.innerHTML === '') {
+                wrapperAlertas.innerHTML = `<p class="text-xs text-slate-400 italic">Nenhum cartão em estado crítico de campanha no momento.</p>`;
+            }
         }
 
-        function saveDiario(e) {
+        // --- SISTEMA DO DIÁRIO ---
+        window.saveDiario = async function(e) {
             e.preventDefault();
-            db.diario.push({
-                id: Date.now(),
-                data: document.getElementById('diario-data').value,
+            const novaAtividade = {
+                data: document.getElementById('diario-data').value.split('-').reverse().join('/'),
                 periodo: document.getElementById('diario-periodo').value,
                 dirigente: document.getElementById('diario-dirigente').value,
-                pontoEncontro: document.getElementById('diario-ponto').value,
-                irmaosPresentes: parseInt(document.getElementById('diario-presentes').value),
-                publicacoes: parseInt(document.getElementById('diario-publicacoes').value),
+                ponto: document.getElementById('diario-ponto').value,
+                presentes: document.getElementById('diario-presentes').value,
+                pubs: document.getElementById('diario-publicacoes').value,
                 clima: document.getElementById('diario-clima').value,
                 imprevisto: document.getElementById('diario-imprevisto').value
-            });
-            commit();
+            };
+            APP_DATA.diario.unshift(novaAtividade);
+            await saveToFirebase();
             document.getElementById('form-diario').reset();
-            renderDiario();
         }
 
-        function deleteDiario(id) {
-            if(confirm("Deseja deletar?")) { db.diario = db.diario.filter(d => d.id !== id); commit(); renderDiario(); }
-        }
-
-        // CONFIGURAÇÕES RENDER
-        function renderConfig() {
-            const ul = document.getElementById('lista-irmaos');
-            ul.innerHTML = "";
-            db.irmaos.sort().forEach(name => {
-                ul.innerHTML += `
-                    <li class="p-2 flex justify-between items-center hover:bg-slate-50">
-                        <span class="text-slate-700 text-xs font-medium"><i class="fa-solid fa-user text-indigo-400 mr-2"></i>${name}</span>
-                        <button onclick="removeIrmao('${name}')" class="text-slate-400 hover:text-rose-600 p-1"><i class="fa-solid fa-trash-can text-xs"></i></button>
-                    </li>
-                `;
-            });
-        }
-
-        function renderConfigTerritoriosList() {
-            const tbody = document.getElementById('table-config-territorios-body');
-            const search = document.getElementById('search-config-t').value.toLowerCase();
-            tbody.innerHTML = "";
-            db.territorios.forEach(t => {
-                if(!t.id.toString().includes(search) && !t.bairro.toLowerCase().includes(search)) return;
+        window.renderDiario = function() {
+            const tbody = document.getElementById('table-diario-body');
+            tbody.innerHTML = '';
+            APP_DATA.diario.forEach((d, idx) => {
                 tbody.innerHTML += `
-                    <tr class="hover:bg-slate-50 text-xs">
-                        <td class="p-2 font-bold">Nº ${t.id}</td>
-                        <td class="p-2 text-slate-600">${t.bairro}</td>
-                        <td class="p-2 text-center flex gap-3 justify-center">
-                            <button onclick="startTerritorioEdit(${t.id})" class="text-indigo-600 hover:text-indigo-900 font-semibold"><i class="fa-solid fa-pencil"></i></button>
-                            <button onclick="deleteTerritorio(${t.id})" class="text-rose-500 hover:text-rose-700"><i class="fa-solid fa-trash-can"></i></button>
+                    <tr class="hover:bg-slate-50 border-b border-slate-100">
+                        <td class="p-3"><b>${d.data}</b><br><span class="text-xs text-slate-400">${d.periodo}</span></td>
+                        <td class="p-3 font-medium">${d.ponto}<br><span class="text-xs text-indigo-600 font-normal">Dirigente: ${d.dirigente}</span></td>
+                        <td class="p-3 text-center text-xs">👥 Presentes: <b>${d.presentes}</b><br>📖 Pubs: <b>${d.pubs}</b></td>
+                        <td class="p-3 text-xs">${d.clima}<br><span class="text-[10px] text-slate-400">Obs: ${d.imprevisto}</span></td>
+                        <td class="p-3 text-center">
+                            <button onclick="deleteDiarioItem(${idx})" class="text-rose-500 hover:text-rose-700"><i class="fa-solid fa-trash-can"></i></button>
                         </td>
-                    </tr>
-                `;
+                    </tr>`;
             });
         }
 
-        function saveTerritorio(e) {
-            e.preventDefault();
-            const id = parseInt(document.getElementById('config-t-id').value);
-            const bairro = document.getElementById('config-t-bairro').value.toUpperCase();
-            const quadras = parseInt(document.getElementById('config-t-quadras').value);
-            const foto = document.getElementById('config-t-foto').value;
-            const referencia = document.getElementById('config-t-referencia').value;
-            const obsPermanente = document.getElementById('config-t-obs').value;
-            const editModeId = document.getElementById('edit-mode-id').value;
-
-            if (editModeId === "") {
-                if(db.territorios.some(t => t.id === id)){ alert("ID existente!"); return; }
-                db.territorios.push({ id, bairro, referencia, quadras, obsPermanente, foto });
-            } else {
-                const index = db.territorios.findIndex(t => t.id === parseInt(editModeId));
-                if(index !== -1) db.territorios[index] = { id, bairro, referencia, quadras, obsPermanente, foto };
+        window.deleteDiarioItem = async function(idx) {
+            if(confirm("Excluir lançamento do diário?")) {
+                APP_DATA.diario.splice(idx, 1);
+                await saveToFirebase();
             }
-            commit();
-            cancelTerritorioEdit();
-            renderConfigTerritoriosList();
         }
 
-        function startTerritorioEdit(id) {
-            const t = db.territorios.find(item => item.id === id);
-            if(!t) return;
-            document.getElementById('edit-mode-id').value = t.id;
+        // --- ABA CONFIGURAÇÕES: MANUTENÇÃO DE CARTÕES ---
+        window.saveTerritorio = async function(e) {
+            e.preventDefault();
+            const id = document.getElementById('config-t-id').value;
+            const editId = document.getElementById('edit-mode-id').value;
+            
+            const novoTerritorio = {
+                id: parseInt(id),
+                bairro: document.getElementById('config-t-bairro').value.toUpperCase(),
+                quadras: parseInt(document.getElementById('config-t-quadras').value),
+                foto: document.getElementById('config-t-foto').value,
+                referencia: document.getElementById('config-t-referencia').value,
+                obs: document.getElementById('config-t-obs').value,
+                status: editId ? APP_DATA.territorios[editId].status : 'Livre',
+                irmaoAtual: editId ? APP_DATA.territorios[editId].irmaoAtual : '—',
+                dataSaida: editId ? APP_DATA.territorios[editId].dataSaida : '—'
+            };
+
+            if (editId && editId !== id) {
+                delete APP_DATA.territorios[editId];
+            }
+
+            APP_DATA.territorios[id] = novoTerritorio;
+            await saveToFirebase();
+            cancelTerritorioEdit();
+        }
+
+        window.editTerritorio = function(id) {
+            const t = APP_DATA.territorios[id];
+            document.getElementById('edit-mode-id').value = id;
             document.getElementById('config-t-id').value = t.id;
             document.getElementById('config-t-bairro').value = t.bairro;
             document.getElementById('config-t-quadras').value = t.quadras;
             document.getElementById('config-t-foto').value = t.foto;
             document.getElementById('config-t-referencia').value = t.referencia;
-            document.getElementById('config-t-obs').value = t.obsPermanente;
+            document.getElementById('config-t-obs').value = t.obs;
+            
+            document.getElementById('title-form-territorio').innerHTML = `<i class="fa-solid fa-pen-to-square text-amber-500"></i> Editando Cartão nº ${id}`;
+            document.getElementById('btn-submit-t').innerText = "Atualizar Cartão";
             document.getElementById('btn-cancel-edit-t').classList.remove('hidden');
         }
 
-        function cancelTerritorioEdit() {
-            document.getElementById('edit-mode-id').value = "";
+        window.cancelTerritorioEdit = function() {
             document.getElementById('form-territorio').reset();
+            document.getElementById('edit-mode-id').value = '';
+            document.getElementById('title-form-territorio').innerHTML = `<i class="fa-solid fa-map-pin text-indigo-600"></i> Cadastrar Novo Cartão`;
+            document.getElementById('btn-submit-t').innerText = "Salvar Cartão";
             document.getElementById('btn-cancel-edit-t').classList.add('hidden');
         }
 
-        function deleteTerritorio(id) {
-            if(confirm(`Excluir Cartão Nº ${id}?`)) { db.territorios = db.territorios.filter(t => t.id !== id); commit(); renderConfigTerritoriosList(); }
+        window.deleteTerritorio = async function(id) {
+            if(confirm(`Tem certeza que deseja apagar o Cartão ${id} permanentemente da nuvem?`)) {
+                delete APP_DATA.territorios[id];
+                await saveToFirebase();
+            }
         }
 
-        function addIrmao() {
+        window.renderConfigTerritoriosList = function() {
+            const container = document.getElementById('lista-config-territorios');
+            const search = document.getElementById('search-config-t').value.toLowerCase();
+            container.innerHTML = '';
+            
+            Object.values(APP_DATA.territorios).forEach(t => {
+                if(t.id.toString().includes(search) || t.bairro.toLowerCase().includes(search)) {
+                    container.innerHTML += `
+                        <div class="p-2.5 flex justify-between items-center hover:bg-slate-50">
+                            <div><b>${t.id}</b> - <span class="text-slate-600">${t.bairro}</span> <span class="text-slate-400">(${t.quadras} qds)</span></div>
+                            <div class="flex gap-1">
+                                <button onclick="editTerritorio(${t.id})" class="text-indigo-600 hover:bg-indigo-50 p-1 rounded"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteTerritorio(${t.id})" class="text-rose-600 hover:bg-rose-50 p-1 rounded"><i class="fa-solid fa-trash-can"></i></button>
+                            </div>
+                        </div>`;
+                }
+            });
+        }
+
+        // --- ABA CONFIGURAÇÕES: MANUTENÇÃO DE IRMÃOS ---
+        window.addIrmao = async function() {
             const input = document.getElementById('config-irmao-nome');
-            const name = input.value.trim();
-            if(!name) return;
-            if(db.irmaos.includes(name)) { alert("Existente!"); return; }
-            db.irmaos.push(name); commit(); input.value = ""; renderConfig();
+            const nome = input.value.trim();
+            if(!nome) return;
+            if(APP_DATA.irmaos.includes(nome)) return alert("Este nome já está cadastrado.");
+            
+            APP_DATA.irmaos.push(nome);
+            APP_DATA.irmaos.sort();
+            await saveToFirebase();
+            input.value = '';
         }
 
-        function removeIrmao(name) {
-            if(confirm(`Remover ${name}?`)) { db.irmaos = db.irmaos.filter(i => i !== name); commit(); renderConfig(); }
+        window.removeIrmao = async function(nome) {
+            if(confirm(`Remover ${nome} da lista de publicadores?`)) {
+                APP_DATA.irmaos = APP_DATA.irmaos.filter(i => i !== nome);
+                await saveToFirebase();
+            }
         }
 
-        window.onload = function() { calculateMetrics(); renderPainel(); };
+        function renderConfigIrmaosList() {
+            const ul = document.getElementById('lista-irmaos');
+            ul.innerHTML = '';
+            APP_DATA.irmaos.forEach(nome => {
+                ul.innerHTML += `
+                    <li class="px-4 py-2 flex justify-between items-center hover:bg-slate-50">
+                        <span class="font-medium text-slate-700">${nome}</span>
+                        <button onclick="removeIrmao('${nome}')" class="text-slate-400 hover:text-rose-600 transition"><i class="fa-solid fa-user-minus"></i></button>
+                    </li>`;
+            });
+        }
+
+        // --- COPIA E COLA EM MASSA (EXCEL) ---
+        window.importTerritoriosMassa = async function() {
+            const text = document.getElementById('textarea-import-territorios').value.trim();
+            if(!text) return alert("Cole dados válidos do Excel.");
+            
+            const linhas = text.split('\n');
+            let importados = 0;
+
+            linhas.forEach(linha => {
+                const colunas = linha.split('\t');
+                if(colunas.length >= 2) {
+                    const id = parseInt(colunas[0].trim());
+                    const bairro = colunas[1].trim().toUpperCase();
+                    const quadras = colunas[2] ? parseInt(colunas[2].trim()) : 1;
+                    
+                    if(!isNaN(id)) {
+                        APP_DATA.territorios[id] = {
+                            id: id, bairro: bairro, quadras: quadras,
+                            foto: '', referencia: '', obs: '',
+                            status: 'Livre', irmaoAtual: '—', dataSaida: '—'
+                        };
+                        importados++;
+                    }
+                }
+            });
+            
+            await saveToFirebase();
+            document.getElementById('textarea-import-territorios').value = '';
+            alert(`${importados} cartões importados/atualizados com sucesso na nuvem!`);
+        }
+
+        window.importIrmaosMassa = async function() {
+            const text = document.getElementById('textarea-import-irmaos').value.trim();
+            if(!text) return alert("Cole uma lista de nomes.");
+            
+            const linhas = text.split('\n');
+            let importados = 0;
+
+            linhas.forEach(linha => {
+                const nome = linha.trim();
+                if(nome && !APP_DATA.irmaos.includes(nome)) {
+                    APP_DATA.irmaos.push(nome);
+                    importados++;
+                }
+            });
+            
+            APP_DATA.irmaos.sort();
+            await saveToFirebase();
+            document.getElementById('textarea-import-irmaos').value = '';
+            alert(`${importados} novos irmãos importados com sucesso para a nuvem!`);
+        }
+
+        // --- BACKUPS EXTERNOS (ARQUIVOS JSON) ---
+        window.exportSystemBackup = function() {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(APP_DATA, null, 2));
+            const downloadAnchor = document.createElement('a');
+            downloadAnchor.setAttribute("href", dataStr);
+            downloadAnchor.setAttribute("download", `backup_territorios_norte_${new Date().toISOString().slice(0,10)}.json`);
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            downloadAnchor.remove();
+        }
+
+        window.importSystemBackup = function(e) {
+            const fileReader = new FileReader();
+            fileReader.onload = async function(event) {
+                try {
+                    const parsed = JSON.parse(event.target.result);
+                    if(parsed.territorios) {
+                        APP_DATA = parsed;
+                        await saveToFirebase();
+                        alert("Backup restaurado e sincronizado com a nuvem com sucesso!");
+                    } else {
+                        alert("Arquivo inválido.");
+                    }
+                } catch (err) {
+                    alert("Erro ao ler arquivo.");
+                }
+            };
+            fileReader.readAsText(e.target.files[0]);
+        }
+
+        // Inicialização automática ao carregar a página
+        initRealtimeSync();
     </script>
 </body>
 </html>
